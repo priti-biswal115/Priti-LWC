@@ -1,0 +1,70 @@
+<template>
+
+    <template if:true={portfolio}>
+
+        <div class="hero">
+            <h1>{portfolio.Name}</h1>
+            <p>{portfolio.Professional_Title__c}</p>
+        </div>
+
+        <lightning-card title="About Me">
+            <div class="content">
+                {portfolio.About_Me__c}
+            </div>
+        </lightning-card>
+
+        <lightning-card title="Experience">
+            <div class="content">
+                {portfolio.Experience__c}
+            </div>
+        </lightning-card>
+
+        <lightning-card title="Education">
+            <div class="content">
+                {portfolio.Education__c}
+            </div>
+        </lightning-card>
+
+        <lightning-card title="Skills">
+            <div class="content">
+                {portfolio.Skills__c}
+            </div>
+        </lightning-card>
+
+        <lightning-card title="Projects">
+            <div class="content">
+                {portfolio.Projects__c}
+            </div>
+        </lightning-card>
+
+        <lightning-card title="Achievements">
+            <div class="content">
+                {portfolio.Achievements__c}
+            </div>
+        </lightning-card>
+
+        <lightning-card title="Certifications">
+            <div class="content">
+                {portfolio.Certifications__c}
+            </div>
+        </lightning-card>
+
+        <lightning-card title="Contact">
+            <div class="content">
+                <p><strong>Email:</strong> {portfolio.Email__c}</p>
+
+                <p><strong>Phone:</strong> {portfolio.Phone}</p>
+
+                <p><strong>Location:</strong> {portfolio.Location__c}</p>
+
+                <p><strong>GitHub:</strong> {portfolio.GitHub_URL__c}</p>
+
+                <p><strong>LinkedIn:</strong> {portfolio.LinkedIn_URL__c}</p>
+
+                <p><strong>LeetCode:</strong> {portfolio.LeetCode_URL__c}</p>
+            </div>
+        </lightning-card>
+
+    </template>
+
+</template>
